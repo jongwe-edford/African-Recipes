@@ -1,0 +1,69 @@
+<div class="py-5 px-4 my-5 text-center">
+  <h1 class="display-5 fw-bold">Submit your recipe</h1>
+  <div class="col-lg-6 mx-auto">
+    <p class="lead">Share your kitchen mastery with the world</p>
+  </div>
+</div>
+
+
+ 
+  <div class="col-8">
+    <form action="/submit-recipe" enctype="multipart/form-data" method="post">
+      <div class="row g-3">
+        <div class="col-12">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" name="email" id="email" class="form-control" />
+        </div>
+        <div class="col-12">
+          <label for="email" class="form-label">Receipe Name</label>
+          <input type="text" name="name" id="name" class="form-control" />
+        </div>
+        <div class="col-12">
+          <label for="description" class="form-label">Recipe description</label>
+          <textarea
+            type="text"
+            name="description"
+            id="description"
+            class="form-control"
+            rows="10"
+          ></textarea>
+        </div>
+        <div class="col-12">
+          <label for="ingrdients" class="form-label">Ingredients</label>
+          <small>Example: 2 cups milk</small>
+          <div class="ingredient-list">
+            <div class="ingredient-div mb-3">
+            <input type="email" name="ingrdients" class="form-control" />
+
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <button type="button" class="btn btn-outline-primary" id="addIngredientBtn">
+            + Ingredients
+          </button>
+        </div>
+        <div class="col-12">
+          <label for="category">Category</label>
+          <select name="category" id="category" class="form-select">
+            <option selected>Selected category</option>
+            <option value="Nigerian">Nigerian</option>
+            <option value="Zimbabwean">Zimbabwean</option>
+            <option value="South African">South African</option>
+
+            <option value="Liberian">Liberian</option>
+            <option value="Egyptian">Egyptian</option>
+
+            
+            </option>
+          </select>
+        </div>
+        <div class="col-12">
+         <label for="image">Recipe image</label>
+         <input type="file" class="form-control" name="image" accept="image/*">
+        </div>
+        <div class="col-12"><button type="submit" class="btn btn-primary">Submit recipe</button></div>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,56 @@
+:root {
+  --bs-font-sans-serif: 'Rubik', sans-serif;
+}
+
+.container-xxl {
+  max-width: 1460px;
+  background-color: rgba(0, 0, 0, 0.26);
+}
+
+body {
+  background-image: url('/img/food-bg.jpg');
+  background-size: cover;
+}
+
+a {
+  color: var(--bs-dark);
+}
+
+/* Category card start */
+
+.category__link {
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  transition: 230ms all;
+}
+
+.category__link:hover {
+  transform: scale(1.1);
+}
+
+.category__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  border-radius: 8px;
+
+  margin-bottom: 10px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.26);
+  overflow: hidden;
+}
+
+.category__img--large {
+  height: 210px;
+}
+
+.category__img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.sd {
+  background-color: rgba(0, 0, 0, 0.46);
+}
